@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "question": "Which framework powers the backend in this repository?",
+    "options": [
+      "Express.js without any framework",
+      "NestJS",
+      "Koa",
+      "Fastify standalone"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "question": "Which library is used for MongoDB integration in the server?",
+    "options": [
+      "TypeORM",
+      "Sequelize",
+      "@nestjs/mongoose with mongoose",
+      "Prisma"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 3,
+    "question": "What is the default port the API listens on if PORT is not set?",
+    "options": [
+      "3000",
+      "4000",
+      "5173",
+      "8080"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 4,
+    "question": "Which origins are explicitly allowed by CORS in main.ts?",
+    "options": [
+      "Only http://localhost:3000",
+      "http://localhost:3000 and http://localhost:8080",
+      "http://localhost:3000, http://127.0.0.1:3000, http://localhost:5173, http://127.0.0.1:5173",
+      "All origins (*)"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "question": "Which global validation pipe configuration is enabled?",
+    "options": [
+      "ValidationPipe with transform disabled and whitelist disabled",
+      "ValidationPipe with whitelist, forbidNonWhitelisted, and transform enabled",
+      "No global validation pipe is used",
+      "Only custom middleware handles validation"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "question": "Which controller handles CRUD operations for items?",
+    "options": [
+      "AppController",
+      "ItemsController",
+      "ToolsController",
+      "HealthController"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 7,
+    "question": "Which endpoint creates a new item?",
+    "options": [
+      "POST /item",
+      "POST /items",
+      "PUT /items",
+      "POST /tools"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 8,
+    "question": "Which endpoint deletes all items?",
+    "options": [
+      "DELETE /items",
+      "DELETE /items/all",
+      "DELETE /item",
+      "DELETE /tools"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 9,
+    "question": "What is the maximum length allowed for an item's name (CreateItemDto)?",
+    "options": [
+      "80 characters",
+      "100 characters",
+      "120 characters",
+      "256 characters"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 10,
+    "question": "What is the maximum length allowed for an item's description (CreateItemDto)?",
+    "options": [
+      "256 characters",
+      "512 characters",
+      "1024 characters",
+      "No limit"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 11,
+    "question": "Which of the following is true about the Item schema?",
+    "options": [
+      "It does not track timestamps",
+      "It requires a unique numeric ID",
+      "It has timestamps enabled and requires a trimmed name",
+      "It stores connections as an array of strings by default"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 12,
+    "question": "How do service methods commonly fetch documents for items and tools?",
+    "options": [
+      "Using raw MongoDB driver calls",
+      "Using mongoose with lean() for plain objects",
+      "Using an in-memory array",
+      "Using Prisma"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "question": "Which endpoint supports batch upsert of tools?",
+    "options": [
+      "POST /tools",
+      "POST /tools/batch",
+      "PUT /tools",
+      "PATCH /tools/batch"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 14,
+    "question": "Which property must be unique and indexed in the Tool schema?",
+    "options": [
+      "name",
+      "category",
+      "id",
+      "logo"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "question": "What validator is applied to the 'color' field in CreateToolDto?",
+    "options": [
+      "IsRGB",
+      "IsHexColor",
+      "IsHSL",
+      "IsNumberString"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 16,
+    "question": "How are 'connections' validated in CreateToolDto?",
+    "options": [
+      "Must be a required non-empty array of numbers",
+      "Optional array of strings with IsArray and IsString({ each: true })",
+      "Optional single string field",
+      "Required array of objects with id and name"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 17,
+    "question": "Which method is used to update tools in bulk in ToolsService?",
+    "options": [
+      "insertMany",
+      "bulkWrite with updateOne upsert: true",
+      "updateMany with ordered: true",
+      "findOneAndUpdate in a loop"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 18,
+    "question": "How does the application determine the MongoDB connection URI?",
+    "options": [
+      "Hardcoded URI in app.module.ts",
+      "Reads from MONGODB_URI or builds from MONGODB_USERNAME/MONGODB_PASSWORD/MONGODB_HOST",
+      "Reads only from MONGODB_HOST",
+      "Generates a local SQLite file"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 19,
+    "question": "What default MongoDB host is used when building the URI if none is provided?",
+    "options": [
+      "localhost:27017",
+      "atlas.mongodb.net",
+      "jstraining.buufn0n.mongodb.net",
+      "127.0.0.1:27017"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 20,
+    "question": "What happens if neither MONGODB_URI nor username/password are provided?",
+    "options": [
+      "The app connects to an in-memory MongoDB",
+      "The app logs a warning and continues without DB",
+      "An error is thrown indicating missing MongoDB connection details",
+      "A default local MongoDB URI is used"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 21,
+    "question": "What does the request logger in main.ts output?",
+    "options": [
+      "Only the request method",
+      "Only the request URL",
+      "ISO timestamp, HTTP method, and URL",
+      "Request headers and body"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 22,
+    "question": "What does the root route (GET /) return according to AppService?",
+    "options": [
+      "JSON object with status",
+      "Hello World!",
+      "Server health details",
+      "HTML page"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 23,
+    "question": "Which testing library is used for HTTP e2e tests?",
+    "options": [
+      "Axios",
+      "Supertest",
+      "Got",
+      "Playwright"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 24,
+    "question": "Where are unit tests located by Jest configuration?",
+    "options": [
+      "Any .test.ts in root",
+      "Any .spec.ts under src (rootDir: \"src\")",
+      "Only under test/ folder",
+      "Only end-to-end tests are configured"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 25,
+    "question": "What TypeScript target is configured in server/tsconfig.json?",
+    "options": [
+      "ES2017",
+      "ES2020",
+      "ES2023",
+      "ESNext"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 26,
+    "question": "Which module resolution strategy is set in tsconfig.json?",
+    "options": [
+      "commonjs",
+      "node",
+      "nodenext",
+      "bundler"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 27,
+    "question": "Which script runs the server in watch (dev) mode?",
+    "options": [
+      "npm run start",
+      "npm run start:dev",
+      "npm run dev",
+      "npm run watch"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 28,
+    "question": "Which dependency versions are used for Nest core packages?",
+    "options": [
+      "@nestjs/common ^8.x and @nestjs/core ^8.x",
+      "@nestjs/common ^10.x and @nestjs/core ^10.x",
+      "@nestjs/common ^11.0.1 and @nestjs/core ^11.0.1",
+      "@nestjs/common ^12.x and @nestjs/core ^12.x"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 29,
+    "question": "Which version major is mongoose in package.json?",
+    "options": [
+      "6.x",
+      "7.x",
+      "8.x",
+      "9.x"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 30,
+    "question": "What does ItemsService.update use to apply changes?",
+    "options": [
+      "updateMany with $set",
+      "findByIdAndUpdate with $set and { new: true }",
+      "replaceOne",
+      "save() after manual merge"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 31,
+    "question": "What does ItemsService.deleteAll return?",
+    "options": [
+      "An array of deleted documents",
+      "A boolean success flag",
+      "An object with deletedCount",
+      "The remaining item count"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 32,
+    "question": "What is the ToolsController base route?",
+    "options": [
+      "tools",
+      "/tools",
+      "api/tools",
+      "/api/tools"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 33,
+    "question": "What is the ItemsController base route?",
+    "options": [
+      "item",
+      "items",
+      "api/items",
+      "v1/items"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 34,
+    "question": "Which fields are required in the CreateToolDto?",
+    "options": [
+      "id, name, category, color",
+      "id, name only",
+      "name, category only",
+      "id, name, category, connections"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 35,
+    "question": "What is the maximum length for the 'category' field in CreateToolDto?",
+    "options": [
+      "60 characters",
+      "80 characters",
+      "100 characters",
+      "120 characters"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 36,
+    "question": "What is the maximum length for the 'name' field in CreateToolDto?",
+    "options": [
+      "80 characters",
+      "100 characters",
+      "120 characters",
+      "256 characters"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 37,
+    "question": "Which statement about Tool schema 'connections' is true?",
+    "options": [
+      "It is required and defaults to ['*']",
+      "It is optional and defaults to an empty array",
+      "It is a single string field",
+      "It is an array of objects with id and type"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 38,
+    "question": "Which environment variables can configure MongoDB according to AppModule?",
+    "options": [
+      "MONGO_URI only",
+      "MONGODB_URI or MONGODB_USERNAME/MONGODB_PASSWORD/MONGODB_HOST",
+      "DB_HOST and DB_PORT only",
+      "DATABASE_URL only"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 39,
+    "question": "What does ConfigModule.forRoot({ isGlobal: true }) imply?",
+    "options": [
+      "Config is only available in AppModule",
+      "Config service is globally available without re-importing",
+      "It loads .env only for test environment",
+      "It disables environment variables"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 40,
+    "question": "How is the Mongoose model injected into services?",
+    "options": [
+      "Using @InjectRepository",
+      "Using @InjectModel with Model<...>",
+      "Using @InjectConnection",
+      "Using custom provider tokens manually"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 41,
+    "question": "What does ToolsService.deleteAll return?",
+    "options": [
+      "A list of deleted tool IDs",
+      "An object with deletedCount",
+      "A boolean true on success",
+      "Nothing (void)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 42,
+    "question": "Which option best describes the logger middleware in main.ts?",
+    "options": [
+      "Nest built-in Logger with log levels",
+      "Custom middleware printing timestamp, method, and url",
+      "Morgan integrated via express",
+      "No logging configured"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 43,
+    "question": "What is the base TypeScript outDir configured?",
+    "options": [
+      "./build",
+      "./dist",
+      "./out",
+      "./lib"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 44,
+    "question": "Which tsconfig compiler options enable decorators and metadata?",
+    "options": [
+      "experimentalDecorators and emitDecoratorMetadata",
+      "emitDecoratorMetadata only",
+      "experimentalDecorators only",
+      "decorators: true"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 45,
+    "question": "Which strictness option is enabled in tsconfig.json?",
+    "options": [
+      "noImplicitAny: true",
+      "strictNullChecks: true",
+      "alwaysStrict: true",
+      "exactOptionalPropertyTypes: true"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 46,
+    "question": "What does the Jest e2e test assert for GET /?",
+    "options": [
+      "Status 204 with empty body",
+      "Status 200 and body 'Hello World!'",
+      "Status 201 and JSON body",
+      "Status 200 and an HTML page"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 47,
+    "question": "What license value is set in server/package.json?",
+    "options": [
+      "MIT",
+      "Apache-2.0",
+      "UNLICENSED",
+      "ISC"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 48,
+    "question": "What is the jest 'rootDir' configured to?",
+    "options": [
+      "root",
+      "src",
+      "test",
+      "dist"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 49,
+    "question": "Where does Jest output coverage by default per package.json?",
+    "options": [
+      "./coverage",
+      "../coverage",
+      "./dist/coverage",
+      "./test/coverage"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 50,
+    "question": "Which statement about CORS config is correct?",
+    "options": [
+      "CORS is disabled by default",
+      "CORS allows specified localhost origins and sets credentials: true",
+      "CORS allows only same-origin requests",
+      "CORS allows any origin with credentials false"
+    ],
+    "correctAnswer": 1
+  }
+]

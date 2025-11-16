@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"$content = Get-Content ''C:\\Users\\aryamann.tomar\\OneDrive - GEP\\Desktop\\Conn\\client\\package.json'' -Raw; $utf8NoBom = New-Object System.Text.UTF8Encoding $false; [System.IO.File]::WriteAllText(''C:\\Users\\aryamann.tomar\\OneDrive - GEP\\Desktop\\Conn\\client\\package.json'', $content, $utf8NoBom)\")",
+      "Bash(node -e \"const fs = require(''fs''); const content = fs.readFileSync(''package.json'', ''utf8'').replace(/^\\uFEFF/, ''''); fs.writeFileSync(''package.json'', content, ''utf8'');\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

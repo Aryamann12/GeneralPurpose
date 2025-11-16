@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Configuration files with credentials
+configuration.txt
+
+# Testing
+coverage/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.idea/
+*.swp
+
