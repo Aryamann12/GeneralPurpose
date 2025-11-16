@@ -151,3 +151,21 @@ html {
   }
 }
 
+/* Force white text in admin form inputs */
+.admin-form input[type="text"],
+.admin-form textarea,
+input[type="text"].admin-input,
+textarea.admin-textarea {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.admin-form input[type="text"]:autofill,
+.admin-form textarea:autofill,
+input[type="text"].admin-input:-webkit-autofill,
+textarea.admin-textarea:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #334155 inset !important;
+  color: #ffffff !important;
+}
+

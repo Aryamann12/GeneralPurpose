@@ -3,7 +3,13 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { AuthProvider } from '@/src/auth/AuthContext'
 
-const inter = Inter({ subsets: ['latin'] })
+// Configure Inter with professional weights for typographic hierarchy
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-inter',
+  display: 'swap', // Optimal font loading for performance
+})
 
 export const metadata: Metadata = {
   title: 'Portfolio | Aryamann',
@@ -16,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={inter.variable}>
+      <body className="font-sans antialiased">
         <AuthProvider>
           {children}
         </AuthProvider>

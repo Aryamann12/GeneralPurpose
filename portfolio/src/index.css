@@ -43,19 +43,7 @@ html {
     background: #00b8e6;
 }
 
-/* Blinking cursor animation */
-@keyframes blink {
-    0%, 50% {
-        opacity: 1;
-    }
-    51%, 100% {
-        opacity: 0;
-    }
-}
-
-.animate-blink {
-    animation: blink 1s infinite;
-}
+/* Blinking cursor animation - moved to utilities layer */
 
 /* Selection */
 ::selection {

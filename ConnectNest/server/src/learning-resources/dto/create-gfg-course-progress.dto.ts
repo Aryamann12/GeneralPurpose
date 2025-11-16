@@ -1,12 +1,17 @@
-import { IsString, IsArray, ValidateNested } from 'class-validator';
+import { IsString, IsArray, ValidateNested, IsNumber, IsOptional, IsEnum } from 'class-validator';
 import { Type } from 'class-transformer';
 
 export class ModuleProgressDto {
   sr_no!: number;
   module!: string;
-  total_hours!: string;
+  @IsNumber()
+  total_hours!: number;
   completed_percentage!: number;
-  status!: string;
+  @IsEnum(['Not Started', 'In Progress', 'Completed'])
+  status!: 'Not Started' | 'In Progress' | 'Completed';
+  @IsOptional()
+  @IsString()
+  notes?: string;
 }
 
 export class CreateGFGCourseProgressDto {

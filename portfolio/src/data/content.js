@@ -25,46 +25,83 @@ export const journeyData = [
     year: "2019-2022",
     title: "IIT Gandhinagar – B.Tech Electrical Engineering",
     dates: "July 2019 – Dec 2022",
-    description: "Graduated early with CGPA 8.08/10. 2× Dean's List honors. Built foundations in electronics, computing, and AI. Developed strong problem-solving and analytical skills.",
-    tags: ["Electrical Engineering", "Early Graduation", "Dean's List"],
-    icon: "graduation-cap"
+    location: "Delhi",
+    description: [
+      "Graduated early with CGPA 8.08/10",
+      "2× Dean's List Awardee - Recognized for academic excellence",
+      "Built strong foundations in electronics, computing, and AI",
+      "Developed advanced problem-solving and analytical skills",
+      "Completed coursework in signal processing, control systems, and machine learning"
+    ],
+    tags: ["Electrical Engineering", "Early Graduation", "2× Dean's List Awardee"],
+    icon: "graduation-cap",
+    image: null
   },
   {
     id: 2,
     year: "2022",
     title: "Semusi Technologies – Software Engineering Intern",
-    dates: "May 2022 – July 2022 (Remote)",
-    description: "Integrated Apache DataSketches into PostgreSQL for high-speed analytics. Built NodeJS + TypeScript REST APIs for unified user data aggregation. Analyzed 23M bank customer records using PySpark, GMM, KNN, and BERT embeddings.",
+    dates: "May 2022 – July 2022",
+    location: "Remote",
+    description: [
+      "Integrated Apache DataSketches into PostgreSQL for high-speed analytics",
+      "Built NodeJS + TypeScript REST APIs for unified user data aggregation",
+      "Analyzed 23M bank customer records using PySpark, GMM, KNN, and BERT embeddings",
+      "Delivered production-ready data infrastructure improvements"
+    ],
     tags: ["PostgreSQL", "NodeJS", "PySpark", "NLP", "BERT"],
-    icon: "briefcase"
+    icon: "briefcase",
+    image: "/images/appice-logo.png"
   },
   {
     id: 3,
     year: "2023",
     title: "IIIT Hyderabad – Research Associate (Precog Lab)",
-    dates: "Jan 2023 – June 2023",
-    description: "AI for Legal Citation: Built BERT-based models to assist judges in referencing past judgments. Conducted survival analysis (Cox Regression) on COVID-19 online community dynamics. Co-authored research paper on social support networks during the pandemic.",
+    dates: "Jan 2023 – July 2023",
+    location: "Hyderabad",
+    description: [
+      "AI for Legal Citation: Built BERT-based models to assist judges in referencing past judgments",
+      "Conducted survival analysis (Cox Regression) on COVID-19 online community dynamics",
+      "Co-authored research paper on social support networks during the pandemic",
+      "Published work accepted at ASONAM conference"
+    ],
     tags: ["Research", "BERT", "NLP", "Survival Analysis", "Legal AI"],
-    icon: "microscope"
+    icon: "microscope",
+    image: "/images/IIIT_Hyderabad_Logo.jpg"
   },
   {
     id: 4,
-    year: "2023-2024",
+    year: "2023-2025",
     title: "GST Network (GSTN) – Software Engineer, R&D (BIFA Unit)",
-    dates: "July 2023 – Present",
-    description: "Network Optimization: Reduced processing of 1.5 crore taxpayer networks from 4 days to <2 hours using parallel computing. Built Cancellation Risk Score Model with 70% recall for fraud detection. Developed HSN code search engine with Word2Vec + Annoy for microsecond retrieval. Created face authentication system using DeepFace + Neo4j vector indexing.",
+    dates: "July 2023 – July 2025",
+    location: "Delhi",
+    description: [
+      "Network Optimization: Reduced processing of 1.5 crore taxpayer networks from 4 days to <2 hours (99%+ improvement) using parallel computing",
+      "Built Cancellation Risk Score Model with 70% recall for fraud detection",
+      "Developed HSN code search engine with Word2Vec + Annoy for microsecond retrieval",
+      "Created face authentication system using DeepFace + Neo4j vector indexing"
+    ],
     tags: ["Graph ML", "Django", "MongoDB", "Neo4j", "Fraud Detection", "NLP"],
-    icon: "rocket"
+    icon: "rocket",
+    image: "/images/gstn-logo.png"
   },
   {
     id: 5,
-    year: "2024-Present",
+    year: "2025-Present",
     title: "GEP – Senior AI Data Scientist",
-    dates: "Present",
-    description: "Leading AI/ML initiatives for enterprise procurement intelligence. Building production-grade data products and ML systems at scale. Driving experimentation and innovation in AI-powered decision-making. Collaborating across teams to deliver high-impact solutions.",
+    dates: "July 2025 – Present",
+    location: "Hyderabad",
+    description: [
+      "Leading AI/ML initiatives for enterprise procurement intelligence",
+      "Building production-grade data products and ML systems at scale",
+      "Driving experimentation and innovation in AI-powered decision-making",
+      "Collaborating across teams to deliver high-impact solutions",
+      "Architecting scalable ML pipelines processing millions of records"
+    ],
     tags: ["AI/ML", "Data Science", "Production ML", "Enterprise AI"],
     icon: "brain",
-    current: true
+    current: true,
+    image: "/images/gep-logo-darkBg.png"
   }
 ];
 

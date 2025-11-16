@@ -1,9 +1,13 @@
-import { IsString, IsNumber, IsArray, ValidateNested } from 'class-validator';
+import { IsString, IsNumber, IsArray, ValidateNested, IsOptional, IsEnum } from 'class-validator';
 import { Type } from 'class-transformer';
 
 export class TopicProgressDto {
   title!: string;
-  status!: string;
+  @IsEnum(['To Read', 'Reading', 'Read', 'Not Started', 'In Progress', 'Completed'])
+  status!: 'To Read' | 'Reading' | 'Read' | 'Not Started' | 'In Progress' | 'Completed';
+  @IsOptional()
+  @IsString()
+  notes?: string;
 }
 
 export class CreateBookDto {
@@ -13,12 +17,20 @@ export class CreateBookDto {
   @IsString()
   category!: string;
 
+  @IsOptional()
   @IsString()
-  module!: string;
+  subcategory?: string;
+
+  @IsString()
+  book_title!: string;
+
+  @IsArray()
+  @IsString({ each: true })
+  authors!: string[];
 
   @IsArray()
   @ValidateNested({ each: true })
   @Type(() => TopicProgressDto)
-  topics!: TopicProgressDto[];
+  chapters!: TopicProgressDto[];
 }
 

@@ -18,10 +18,13 @@ export class Book {
   subcategory?: string;
 
   @Prop({ required: true })
-  module!: string;
+  book_title!: string;
+
+  @Prop({ type: [String], default: [] })
+  authors!: string[];
 
   @Prop({ type: [Object], required: true })
-  topics!: TopicProgress[];
+  chapters!: TopicProgress[];
 }
 
 export const BookSchema = SchemaFactory.createForClass(Book);

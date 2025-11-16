@@ -18,6 +18,16 @@ module.exports = {
     },
     extend: {
       colors: {
+        // Apple-inspired professional color system
+        'pro-dark': '#111111',        // Softer than pure black
+        'pro-darker': '#0A0A0A',      // Even darker for contrast
+        'pro-light': '#F5F5F7',       // Apple's signature off-white
+        'pro-accent': '#007AFF',      // Apple's classic blue
+        'pro-secondary': '#8A8A8E',   // Muted gray for secondary text
+        'pro-tertiary': '#48484A',    // Darker gray for borders
+        'pro-hover': '#0051D5',       // Darker blue for hover states
+
+        // Keep existing shadcn/ui colors for compatibility
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -52,6 +62,9 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      fontFamily: {
+        sans: ['var(--font-inter)', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -66,10 +79,15 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "blink": {
+          "0%, 50%": { opacity: "1" },
+          "51%, 100%": { opacity: "0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "blink": "blink 1s infinite",
       },
     },
   },

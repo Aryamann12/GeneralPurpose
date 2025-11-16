@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Briefcase, Microscope, Rocket, Brain } from 'lucide-react';
+import { GraduationCap, Briefcase, Microscope, Rocket, Brain, MapPin } from 'lucide-react';
 import { journeyData } from '../data/content';
 
 const iconMap = {
@@ -88,13 +88,34 @@ const JourneySection = () => {
                         {item.title}
                       </h4>
 
-                      {/* Dates */}
-                      <p className="text-sm text-gray-400 mb-3">{item.dates}</p>
+                      {/* Location and Dates */}
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="text-sm text-gray-400">{item.location}</span>
+                        <MapPin className="w-4 h-4 text-[#00d4ff]" />
+                        <span className="text-sm text-gray-500">•</span>
+                        <span className="text-sm text-gray-400">{item.dates}</span>
+                      </div>
 
-                      {/* Description */}
-                      <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                        {item.description}
-                      </p>
+                      {/* Image */}
+                      {item.image && (
+                        <div className="mb-4 flex justify-center">
+                          <img 
+                            src={item.image} 
+                            alt={item.title}
+                            className="w-32 h-32 object-contain bg-white/5 rounded-full p-3 border border-white/10"
+                          />
+                        </div>
+                      )}
+
+                      {/* Description as Bullet Points */}
+                      <ul className="text-gray-300 text-sm leading-relaxed mb-4 space-y-2">
+                        {item.description.map((point, pointIndex) => (
+                          <li key={pointIndex} className="flex items-start gap-2">
+                            <span className="text-[#00d4ff] mt-1.5">•</span>
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
 
                       {/* Tags */}
                       <div className="flex flex-wrap gap-2">

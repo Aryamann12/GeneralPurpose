@@ -110,9 +110,38 @@ async function bootstrap() {
         console.log('  Skipping locked tracks (not stored in database)\n');
       } else {
         try {
+          // Transform modules to new schema format
+          const transformedModules = (modules as any[]).map((module: any) => {
+            // Convert total_hours from "8+" to 8
+            let totalHours = module.total_hours;
+            if (typeof totalHours === 'string') {
+              const numericValue = parseInt(totalHours.replace(/[^0-9]/g, ''), 10);
+              totalHours = isNaN(numericValue) ? 0 : numericValue;
+            }
+
+            // Map status: "O" or "⭕" to 'In Progress'
+            let status = module.status;
+            if (status === 'O' || status === '⭕' || status === 'In Progress') {
+              status = 'In Progress';
+            } else if (status === 'Completed' || status === '✓' || status === '✅') {
+              status = 'Completed';
+            } else {
+              status = 'Not Started';
+            }
+
+            return {
+              sr_no: module.sr_no,
+              module: module.module,
+              total_hours: totalHours,
+              completed_percentage: module.completed_percentage,
+              status: status,
+              notes: module.notes || '',
+            };
+          });
+
           await learningResourcesService.createGFGCourse({
             track_name: trackName,
-            modules: modules as any[],
+            modules: transformedModules,
           });
         } catch (error) {
           console.log(`  Skipping duplicate track: ${trackName}`);
@@ -133,10 +162,51 @@ async function bootstrap() {
     const books = Array.isArray(booksData) ? booksData : [booksData];
     for (const book of books) {
       try {
-        await learningResourcesService.createBook(book);
+        // Transform old schema to new schema
+        const moduleText = book.module || '';
+        let bookTitle = moduleText;
+        let authors: string[] = [];
+
+        // Extract authors (format: "Title by Author1, Author2, ...")
+        const byMatch = moduleText.match(/^(.+?)\s+by\s+(.+)$/i);
+        if (byMatch) {
+          bookTitle = byMatch[1].trim();
+          const authorsText = byMatch[2].trim();
+          authors = authorsText
+            .split(',')
+            .map((a) => a.trim())
+            .filter((a) => a.length > 0);
+        }
+
+        // Transform topics to chapters with status mapping
+        const chapters = (book.topics || []).map((topic: any) => {
+          let status = topic.status;
+          if (status === 'O' || status === '⭕' || status === 'Reading') {
+            status = 'Reading';
+          } else if (status === 'Read' || status === '✓' || status === '✅') {
+            status = 'Read';
+          } else {
+            status = 'To Read';
+          }
+
+          return {
+            title: topic.title,
+            status: status,
+            notes: topic.notes || '',
+          };
+        });
+
+        await learningResourcesService.createBook({
+          sr_no: book.sr_no,
+          category: book.category,
+          subcategory: book.subcategory,
+          book_title: bookTitle,
+          authors: authors,
+          chapters: chapters,
+        });
         booksCount++;
-      } catch (error) {
-        console.log(`  Skipping duplicate book: ${book.module}`);
+      } catch (error: any) {
+        console.log(`  Skipping duplicate book: ${book.module || book.book_title || 'unknown'}`);
       }
     }
     console.log(`  ✓ Migrated ${booksCount} books\n`);
@@ -188,26 +258,105 @@ async function bootstrap() {
     }
     console.log(`  ✓ Migrated ${codingNinjasCount} CodingNinjas courses\n`);
 
-    // 6c. TLE Level 3 Courses
+    // 6c. TLE Level 3 Courses - Migrate to both CppProblemList and TLELevel3Course
     console.log('Migrating TLE Level 3 Courses...');
     const tleData = JSON.parse(
       fs.readFileSync(
         path.join(basePath, 'Resources/CP_TLE_LvL3_Course_Syllabus.json'),
-        'utf-8',
-      ),
+        'utf-8'),
     );
-    let tleCount = 0;
-    if (tleData.TLE_LvL3 && Array.isArray(tleData.TLE_LvL3)) {
-      for (const course of tleData.TLE_LvL3) {
+    let listsCreated = 0;
+    let tleCoursesCreated = 0;
+
+    // Process each dynamic key (e.g., "TLE_LvL3")
+    for (const [listName, modules] of Object.entries(tleData)) {
+      if (!Array.isArray(modules)) continue;
+
+      // Transform for CppProblemList
+      const transformedModules = modules.map((module: any) => {
+        const transformedTopics = (module.topics || []).map((topic: any) => {
+          // Map status: "O" or "⭕" to 'Not Started' (default)
+          let status = topic.status;
+          if (status === 'O' || status === '⭕') {
+            status = 'Not Started';
+          } else if (status === 'Solving' || status === 'Solved' || status === 'Attempted') {
+            // Keep valid enum values
+          } else {
+            status = 'Not Started';
+          }
+
+          return {
+            title: topic.title,
+            status: status,
+            notes: topic.notes || '',
+            question_image_url: topic.question_image_url,
+            problem_link: topic.problem_link,
+            difficulty: topic.difficulty,
+          };
+        });
+
+        return {
+          sr_no: module.sr_no,
+          module_name: module.module,
+          category: module.category,
+          topics: transformedTopics,
+        };
+      });
+
+      // Migrate to CppProblemList
+      try {
+        await cppProblemsService.createList({
+          list_name: listName,
+          description: `Migrated from ${listName}`,
+          modules: transformedModules,
+        });
+        listsCreated++;
+      } catch (error: any) {
+        if (error.code === 11000) {
+          // Duplicate key - update instead
+          await cppProblemsService.updateList(listName, {
+            modules: transformedModules,
+          });
+          listsCreated++;
+        } else {
+          console.log(`  ⚠ Error creating list ${listName}: ${error.message}`);
+        }
+      }
+
+      // Migrate to TLELevel3Course collection
+      for (const module of modules) {
+        const transformedTopics = (module.topics || []).map((topic: any) => {
+          // Map status: "O" or "⭕" to 'Not Started' for TopicProgress enum
+          let status = topic.status;
+          if (status === 'O' || status === '⭕') {
+            status = 'Not Started';
+          } else if (status === 'In Progress' || status === 'Completed') {
+            // Keep valid enum values
+          } else {
+            status = 'Not Started';
+          }
+
+          return {
+            title: topic.title,
+            status: status,
+            notes: topic.notes || '',
+          };
+        });
+
         try {
-          await learningResourcesService.createTLELevel3Course(course);
-          tleCount++;
-        } catch (error) {
-          // Skip duplicates
+          await learningResourcesService.createTLELevel3Course({
+            sr_no: module.sr_no,
+            module: module.module,
+            topics: transformedTopics,
+          });
+          tleCoursesCreated++;
+        } catch (error: any) {
+          // Skip duplicates silently
         }
       }
     }
-    console.log(`  ✓ Migrated ${tleCount} TLE Level 3 courses\n`);
+    console.log(`  ✓ Created/Updated ${listsCreated} problem lists`);
+    console.log(`  ✓ Created ${tleCoursesCreated} TLE Level 3 courses\n`);
 
     // 6d. Udemy Access
     console.log('Migrating Udemy Access...');

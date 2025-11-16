@@ -5,7 +5,7 @@ import { personalInfo } from '../data/content';
 import useTypewriter from '../hooks/useTypewriter';
 
 const HeroSection = () => {
-  const dynamicText = useTypewriter(personalInfo.rotatingWords, 100, 50, 2000);
+  const dynamicText = useTypewriter(personalInfo.rotatingWords, 60, 40, 2000);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -28,7 +28,71 @@ const HeroSection = () => {
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#00d4ff]/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#a78bfa]/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+        <div
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#a78bfa]/10 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: '1s' }}
+        />
+
+        {/* Orbital concentric circles in the backdrop */}
+        <div className="pointer-events-none">
+          {/* Desktop / large screens - right side */}
+          <div className="hidden lg:block absolute top-1/2 right-[8%] -translate-y-1/2 opacity-60">
+            <svg viewBox="0 0 100 100" className="w-96 h-96 text-gray-500">
+              <g transform="translate(50 50)">
+                <circle
+                  cx="0"
+                  cy="0"
+                  r="40"
+                  className="fill-none stroke-gray-500/80 stroke-[0.5] animate-[spin_30s_linear_infinite]"
+                  style={{ strokeDasharray: '2 4', transformOrigin: 'center' }}
+                />
+                <circle
+                  cx="0"
+                  cy="0"
+                  r="55"
+                  className="fill-none stroke-gray-500/70 stroke-[0.5] animate-[spin_45s_linear_infinite_reverse]"
+                  style={{ strokeDasharray: '4 4', transformOrigin: 'center' }}
+                />
+                <circle
+                  cx="0"
+                  cy="0"
+                  r="70"
+                  className="fill-none stroke-gray-500/60 stroke-[0.5] animate-[spin_60s_linear_infinite]"
+                  style={{ strokeDasharray: '2 2', transformOrigin: 'center' }}
+                />
+              </g>
+            </svg>
+          </div>
+
+          {/* Mobile / tablet - centered lower */}
+          <div className="block lg:hidden absolute bottom-20 left-1/2 -translate-x-1/2 opacity-40">
+            <svg viewBox="0 0 100 100" className="w-64 h-64 text-gray-500">
+              <g transform="translate(50 50)">
+                <circle
+                  cx="0"
+                  cy="0"
+                  r="32"
+                  className="fill-none stroke-gray-500/80 stroke-[0.5] animate-[spin_30s_linear_infinite]"
+                  style={{ strokeDasharray: '2 4', transformOrigin: 'center' }}
+                />
+                <circle
+                  cx="0"
+                  cy="0"
+                  r="46"
+                  className="fill-none stroke-gray-500/70 stroke-[0.5] animate-[spin_45s_linear_infinite_reverse]"
+                  style={{ strokeDasharray: '4 4', transformOrigin: 'center' }}
+                />
+                <circle
+                  cx="0"
+                  cy="0"
+                  r="60"
+                  className="fill-none stroke-gray-500/60 stroke-[0.5] animate-[spin_60s_linear_infinite]"
+                  style={{ strokeDasharray: '2 2', transformOrigin: 'center' }}
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
       </div>
 
       {/* Content */}
@@ -43,10 +107,10 @@ const HeroSection = () => {
             
             {/* Name with Gradient */}
             <h1
-              className="text-6xl md:text-7xl lg:text-8xl font-light mb-6"
+              className="text-6xl md:text-7xl lg:text-8xl font-black mb-6"
               style={{ 
                 fontFamily: 'Outfit, sans-serif', 
-                letterSpacing: '-0.02em',
+                letterSpacing: '-0.025em',
                 background: 'linear-gradient(135deg, #00d4ff 0%, #a78bfa 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
@@ -59,13 +123,23 @@ const HeroSection = () => {
             {/* Typewriter Effect */}
             <div className="mb-6">
               <h2
-                className="text-2xl md:text-4xl font-light text-white"
+                className="text-2xl md:text-4xl font-light text-white leading-[1.2]"
                 style={{ fontFamily: 'Outfit, sans-serif' }}
               >
                 I'm a{' '}
                 <span className="text-[#00d4ff]">
-                  {dynamicText}
-                  <span className="animate-blink">|</span>
+                  <span className="relative inline-flex items-center min-h-[1.2em]">
+                    <span 
+                      className="inline-block min-w-[1ch] transition-all duration-75 ease-in-out"
+                      style={{ transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)' }}
+                    >
+                      {dynamicText || '\u00A0'}
+                    </span>
+                    <span 
+                      className="ml-1 inline-block w-[16px] h-8 bg-[#00d4ff] align-middle flex-shrink-0 transition-opacity duration-100"
+                      style={{ transitionTimingFunction: 'ease-in-out' }}
+                    />
+                  </span>
                 </span>
               </h2>
             </div>
@@ -128,21 +202,15 @@ const HeroSection = () => {
               
               {/* Profile Picture Container */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden bg-gradient-to-br from-[#1a1f3a] to-[#0f1329] border border-white/10">
-                {/* Placeholder with gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#00d4ff]/20 to-[#a78bfa]/20 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#00d4ff] to-[#a78bfa] flex items-center justify-center shadow-2xl">
-                      <span className="text-white text-6xl font-bold" style={{ fontFamily: 'Outfit, sans-serif' }}>
-                        {personalInfo.name.split(' ').map(n => n[0]).join('')}
-                      </span>
-                    </div>
-                    <p className="text-gray-400 text-sm">Profile Photo</p>
-                    <p className="text-gray-500 text-xs mt-1">Professional Headshot</p>
-                  </div>
-                </div>
+                {/* Profile Image */}
+                <img 
+                  src="/images/aryamann.jpg" 
+                  alt="Aryamann Tomar"
+                  className="w-full h-full object-cover"
+                />
                 
-                {/* Subtle background blur effect */}
-                <div className="absolute inset-0 backdrop-blur-sm"></div>
+                {/* Subtle gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#00d4ff]/10 to-[#a78bfa]/10"></div>
               </div>
             </div>
           </div>

@@ -19,6 +19,10 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "migrate:life-tracker": "ts-node -r tsconfig-paths/register scripts/migrate-life-tracker.ts",
+    "migrate:schemas": "ts-node -r tsconfig-paths/register scripts/migrate-schemas.ts",
+    "cleanup:seed": "ts-node -r tsconfig-paths/register scripts/cleanup-and-seed.ts",
+    "drop:tle": "ts-node -r tsconfig-paths/register scripts/drop-tle-collection.ts",
+    "verify:atlas": "ts-node -r tsconfig-paths/register scripts/verify-atlas-migration.ts",
     "list:collections": "ts-node -r tsconfig-paths/register scripts/list-collections.ts",
     "delete:collections": "ts-node -r tsconfig-paths/register scripts/delete-all-collections.ts"
   },

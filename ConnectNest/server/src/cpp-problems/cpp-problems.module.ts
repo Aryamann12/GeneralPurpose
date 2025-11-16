@@ -6,11 +6,16 @@ import {
   CppProblem,
   CppProblemSchema,
 } from './schemas/cpp-problem.schema';
+import {
+  CppProblemList,
+  CppProblemListSchema,
+} from './schemas/cpp-problem-list.schema';
 
 @Module({
   imports: [
     MongooseModule.forFeature([
       { name: CppProblem.name, schema: CppProblemSchema },
+      { name: CppProblemList.name, schema: CppProblemListSchema },
     ]),
   ],
   controllers: [CppProblemsController],
