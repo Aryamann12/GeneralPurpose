@@ -3,8 +3,14 @@ import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ItemsModule } from './items/items.module';
-import { ToolsModule } from './tools/tools.module';
+import { GymProgressModule } from './gym-progress/gym-progress.module';
+import { KitchenModule } from './kitchen/kitchen.module';
+import { FridgeModule } from './fridge/fridge.module';
+import { DevicesModule } from './devices/devices.module';
+import { LearningResourcesModule } from './learning-resources/learning-resources.module';
+import { CppProblemsModule } from './cpp-problems/cpp-problems.module';
+import { EntertainmentModule } from './entertainment/entertainment.module';
+import { CareerModule } from './career/career.module';
 
 @Module({
   imports: [
@@ -13,12 +19,14 @@ import { ToolsModule } from './tools/tools.module';
     }),
     MongooseModule.forRootAsync({
       useFactory: () => {
-        const uri =
+        const database = process.env.MONGODB_DATABASE || 'AryamannLifeVars';
+        let uri =
           process.env.MONGODB_URI ??
           buildMongoUri(
             process.env.MONGODB_USERNAME,
             process.env.MONGODB_PASSWORD,
             process.env.MONGODB_HOST,
+            database,
           );
 
         if (!uri) {
@@ -27,11 +35,35 @@ import { ToolsModule } from './tools/tools.module';
           );
         }
 
+        // Ensure database name is set even if MONGODB_URI is provided
+        if (process.env.MONGODB_URI) {
+          // Replace database name in URI if it exists, or append it
+          // MongoDB URI format: mongodb+srv://user:pass@host/dbname?options
+          const uriMatch = uri.match(/^(mongodb\+srv:\/\/[^/]+)\/([^?]*)(\?.*)?$/);
+          if (uriMatch) {
+            uri = `${uriMatch[1]}/${database}${uriMatch[3] || ''}`;
+          } else {
+            // If no database in URI, append it before query params
+            const queryMatch = uri.match(/\?/);
+            if (queryMatch) {
+              uri = uri.replace(/\?/, `/${database}?`);
+            } else {
+              uri = `${uri}/${database}`;
+            }
+          }
+        }
+
         return { uri };
       },
     }),
-    ItemsModule,
-    ToolsModule,
+    GymProgressModule,
+    KitchenModule,
+    FridgeModule,
+    DevicesModule,
+    LearningResourcesModule,
+    CppProblemsModule,
+    EntertainmentModule,
+    CareerModule,
   ],
   controllers: [AppController],
   providers: [AppService],
@@ -42,6 +74,7 @@ function buildMongoUri(
   username?: string,
   password?: string,
   host: string = 'jstraining.buufn0n.mongodb.net',
+  database: string = 'AryamannLifeVars',
 ) {
   if (!username || !password) {
     return undefined;
@@ -51,5 +84,5 @@ function buildMongoUri(
     username,
   )}:${encodeURIComponent(
     password,
-  )}@${host}/?retryWrites=true&w=majority&appName=JSTraining`;
+  )}@${host}/${database}?retryWrites=true&w=majority&appName=JSTraining`;
 }

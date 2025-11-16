@@ -1,5 +1,7 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import { AuthProvider } from './auth/AuthContext';
 import Navigation from './components/Navigation';
 import HeroSection from './components/HeroSection';
 import JourneySection from './components/JourneySection';
@@ -11,8 +13,11 @@ import MusicSection from './components/MusicSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import { Toaster } from './components/ui/toaster';
+import ProtectedRoute from './components/ProtectedRoute';
+import PrivateDashboard from './pages/PrivateDashboard';
 
-function App() {
+// Public Home Component
+const PublicHome = () => {
   return (
     <div className="App" style={{ backgroundColor: '#0a0e27' }}>
       <Navigation />
@@ -27,6 +32,34 @@ function App() {
       <Footer />
       <Toaster />
     </div>
+  );
+};
+
+function App() {
+  return (
+    <AuthProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<PublicHome />} />
+          <Route
+            path="/private"
+            element={
+              <ProtectedRoute>
+                <PrivateDashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/private/*"
+            element={
+              <ProtectedRoute>
+                <PrivateDashboard />
+              </ProtectedRoute>
+            }
+          />
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
 }
 

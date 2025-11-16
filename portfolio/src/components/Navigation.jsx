@@ -1,5 +1,8 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
+import Link from 'next/link';
 import { Button } from './ui/button';
 
 const navItems = [
@@ -91,6 +94,13 @@ const Navigation = () => {
               />
             </button>
           ))}
+          <Link
+            href="/cpp"
+            className="text-sm font-medium transition-all duration-300 relative group text-gray-300 hover:text-white"
+          >
+            C++
+            <span className="absolute -bottom-1 left-0 h-0.5 bg-[#00d4ff] transition-all duration-300 w-0 group-hover:w-full" />
+          </Link>
         </div>
 
         {/* Theme Toggle */}
@@ -131,6 +141,13 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
+            <Link
+              href="/cpp"
+              className="text-left py-2 px-4 rounded-lg transition-all text-gray-300 hover:bg-white/5 hover:text-white"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              C++
+            </Link>
           </div>
         </div>
       )}
