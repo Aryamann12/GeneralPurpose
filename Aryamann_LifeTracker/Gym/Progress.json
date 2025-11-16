@@ -1,0 +1,144 @@
+{
+  "gymProgress": [
+    {
+      "date": "April 12th",
+      "location": null,
+      "push": [
+        { "exercise": "Inclined_Flat", "progress": "x22.5kg", "sets": 3 },
+        { "exercise": "PeckDeck", "progress": "x50kg", "sets": 3 },
+        { "exercise": "ShoulderPress", "progress": "x15kg", "sets": 3 },
+        { "exercise": "LateralRaise", "progress": "x7.5kg", "sets": 3 },
+        { "exercise": "TricepExtension", "progress": "x50kg", "sets": 3 },
+        { "exercise": "PushUps", "progress": "~20", "sets": 3 }
+      ],
+      "pull": [
+        { "exercise": "TBar", "progress": "x35kg", "sets": 3 },
+        { "exercise": "LatPull_ReversePull", "progress": "x45kg", "sets": 3 },
+        { "exercise": "SeatedRow", "progress": "x45kg", "sets": 3 },
+        { "exercise": "Shrugs", "progress": "x25kg", "sets": 3 },
+        { "exercise": "BicepCurl_Hammers", "progress": "x12.5kg", "sets": 3 },
+        { "exercise": "PullUps", "progress": "~15", "sets": 3 }
+      ],
+      "legs": [
+        { "exercise": "GoblinSquats", "progress": "x30kg", "sets": 3 },
+        { "exercise": "LegPress", "progress": "x100kg", "sets": 3 },
+        { "exercise": "LegCurl", "progress": "x40kg", "sets": 3 },
+        { "exercise": "Extensions", "progress": "x50kg", "sets": 3 },
+        { "exercise": "Abduction_Adduction", "progress": "x35kg", "sets": 3 },
+        { "exercise": "LegRaises", "progress": "~60", "sets": 3 }
+      ]
+    },
+    {
+      "date": "May 21st",
+      "location": null,
+      "push": [
+        { "exercise": "Inclined_Flat", "progress": "x25kg", "sets": 3 },
+        { "exercise": "PeckDeck", "progress": "x50kg", "sets": 3 },
+        { "exercise": "ShoulderPress", "progress": "x15kg", "sets": 3 },
+        { "exercise": "LateralRaise", "progress": "x7.5kg", "sets": 3 },
+        { "exercise": "TricepExtension", "progress": "x45kg", "sets": 3 },
+        { "exercise": "PushUps", "progress": "~60", "sets": 3 }
+      ],
+      "pull": [
+        { "exercise": "TBar", "progress": "x45kg", "sets": 3 },
+        { "exercise": "LatPull_ReversePull", "progress": "x45kg", "sets": 3 },
+        { "exercise": "SeatedRow", "progress": "x45kg", "sets": 3 },
+        { "exercise": "Shrugs", "progress": "x25kg", "sets": 3 },
+        { "exercise": "BicepCurl_Hammers", "progress": "x15kg x35kg", "sets": 3 },
+        { "exercise": "PullUps", "progress": "~27", "sets": 3 }
+      ],
+      "legs": [
+        { "exercise": "BarbellSquats", "progress": "x20kg", "sets": 3 },
+        { "exercise": "LegPress", "progress": "x120kg", "sets": 3 },
+        { "exercise": "LegCurl", "progress": "x50kg", "sets": 3 },
+        { "exercise": "Extensions", "progress": "x50kg", "sets": 3 },
+        { "exercise": "Abduction_Adduction", "progress": "x35kg x50kg", "sets": 3 },
+        { "exercise": "VSitUps", "progress": "~60", "sets": 3 }
+      ]
+    },
+    {
+      "date": "June 26th",
+      "location": "On Leaving Delhi",
+      "push": [
+        { "exercise": "Inclined_Flat", "progress": "x27.5kg", "sets": 3 },
+        { "exercise": "PeckDeck", "progress": "x60kg", "sets": 3 },
+        { "exercise": "ShoulderPress", "progress": "x15kg", "sets": 3 },
+        { "exercise": "LateralRaise", "progress": "x7.5kg", "sets": 3 },
+        { "exercise": "TricepExtension", "progress": "x45kg", "sets": 3 },
+        { "exercise": "PushUps", "progress": "~60", "sets": 3 }
+      ],
+      "pull": [
+        { "exercise": "TBar", "progress": "x50kg", "sets": 3 },
+        { "exercise": "LatPull_ReversePull", "progress": "x50kg", "sets": 3 },
+        { "exercise": "SeatedRow", "progress": "x52kg", "sets": 3 },
+        { "exercise": "Shrugs", "progress": "x25kg", "sets": 3 },
+        { "exercise": "BicepCurl_Hammers", "progress": "x15kg x35kg", "sets": 3 },
+        { "exercise": "PullUps", "progress": "~33", "sets": 3 }
+      ],
+      "legs": [
+        { "exercise": "BarbellSquats", "progress": "x20kg", "sets": 3 },
+        { "exercise": "LegPress", "progress": "x120kg", "sets": 3 },
+        { "exercise": "LegCurl", "progress": "x50kg", "sets": 3 },
+        { "exercise": "Extensions", "progress": "x50kg", "sets": 3 },
+        { "exercise": "Abduction_Adduction", "progress": "x35kg x50kg", "sets": 3 },
+        { "exercise": "VSitUps", "progress": "~60", "sets": 3 }
+      ]
+    },
+    {
+      "date": "June 27th - July 6th",
+      "location": "Hamirpur",
+      "push": [
+        { "exercise": "Inclined_Flat", "progress": "x27.5kg", "sets": 3 },
+        { "exercise": "PeckDeck", "progress": "x60kg", "sets": 3 },
+        { "exercise": "ShoulderPress", "progress": "x15kg", "sets": 3 },
+        { "exercise": "LateralRaise", "progress": "x7.5kg", "sets": 3 },
+        { "exercise": "TricepExtension", "progress": "x45kg", "sets": 3 },
+        { "exercise": "PushUps", "progress": "~60", "sets": 3 }
+      ],
+      "pull": [
+        { "exercise": "TBar", "progress": "x40kg", "sets": 3 },
+        { "exercise": "LatPull_ReversePull", "progress": "x35kg x40kg", "sets": 3 },
+        { "exercise": "SeatedRow", "progress": "x50kg", "sets": 3 },
+        { "exercise": "Shrugs", "progress": "x25kg", "sets": 3 },
+        { "exercise": "BicepCurl_Hammers", "progress": "x15kg x22.5kg", "sets": 3 },
+        { "exercise": "PullUps", "progress": "~36", "sets": 3 }
+      ],
+      "legs": [
+        { "exercise": "BarbellSquats", "progress": "x20kg", "sets": 3 },
+        { "exercise": "LegPress", "progress": "x120kg", "sets": 3 },
+        { "exercise": "LegCurl", "progress": "x50kg", "sets": 3 },
+        { "exercise": "Extensions", "progress": "x60kg", "sets": 3 },
+        { "exercise": "Abduction_Adduction", "progress": "x35kg x50kg", "sets": 3 },
+        { "exercise": "VSitUps", "progress": "~60", "sets": 3 }
+      ]
+    },
+    {
+      "date": "2Weeks After July 14th",
+      "location": "Hyderabad",
+      "push": [
+        { "exercise": "Inclined_Flat", "progress": "x27.5kg", "sets": 3 },
+        { "exercise": "PeckDeck", "progress": "x60kg", "sets": 3 },
+        { "exercise": "ShoulderPress", "progress": "x15kg", "sets": 3 },
+        { "exercise": "LateralRaise", "progress": "x7.5kg", "sets": 3 },
+        { "exercise": "TricepExtension", "progress": "x45kg", "sets": 3 },
+        { "exercise": "PushUps", "progress": "~60", "sets": 3 }
+      ],
+      "pull": [
+        { "exercise": "TBar", "progress": "x40kg", "sets": 3 },
+        { "exercise": "LatPull_ReversePull", "progress": "x35kg x40kg", "sets": 3 },
+        { "exercise": "SeatedRow", "progress": "x50kg", "sets": 3 },
+        { "exercise": "Shrugs", "progress": "x25kg", "sets": 3 },
+        { "exercise": "BicepCurl_Hammers", "progress": "x15kg x22.5kg", "sets": 3 },
+        { "exercise": "PullUps", "progress": "~36", "sets": 3 }
+      ],
+      "legs": [
+        { "exercise": "BarbellSquats", "progress": "x20kg", "sets": 3 },
+        { "exercise": "LegPress", "progress": "x120kg", "sets": 3 },
+        { "exercise": "LegCurl", "progress": "x50kg", "sets": 3 },
+        { "exercise": "Extensions", "progress": "x60kg", "sets": 3 },
+        { "exercise": "Abduction_Adduction", "progress": "x35kg x50kg", "sets": 3 },
+        { "exercise": "VSitUps", "progress": "~60", "sets": 3 }
+      ]
+    }
+  ]
+}

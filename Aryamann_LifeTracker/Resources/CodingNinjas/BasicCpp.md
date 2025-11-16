@@ -1,0 +1,118 @@
+#syllabus
+```json
+{
+  "CN_Basics": [
+    {
+      "sr_no": 1,
+      "title": "1_LL1_1",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 2,
+      "title": "1_LL1_2",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 3,
+      "title": "1_LL2_1",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 4,
+      "title": "1_LL2_2",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 5,
+      "title": "2_S",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 6,
+      "title": "3_1_T_1",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 7,
+      "title": "3_1_T_2",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 8,
+      "title": "3_1_T_3",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 9,
+      "title": "3_2_BT_1",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 10,
+      "title": "3_2_BT_2",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 11,
+      "title": "3_2_BT_3",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 12,
+      "title": "3_3_BST_1",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 13,
+      "title": "3_3_BST_2",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 14,
+      "title": "4_PQ",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 15,
+      "title": "5_H",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 16,
+      "title": "6_T&H",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 17,
+      "title": "7_B",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 18,
+      "title": "8_Dp_1",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 19,
+      "title": "8_Dp_2",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 20,
+      "title": "9_G_1",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 21,
+      "title": "9_G_2",
+      "status": "⭕"
+    },
+    {
+      "sr_no": 22,
+      "title": "10_O_3",
+      "status": "⭕"
+    }
+  ]
+}
+
+```

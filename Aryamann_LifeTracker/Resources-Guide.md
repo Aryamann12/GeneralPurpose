@@ -1,0 +1,1 @@
+IMPORTANT: Theres one thing about completing a course then theres another thing to actually reconcile that particular topic from the subject and then apply that to the real Life

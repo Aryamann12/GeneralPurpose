@@ -1,0 +1,3 @@
+Guitar
+- Capo
+- Pluck
