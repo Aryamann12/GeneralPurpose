@@ -1,0 +1,21 @@
+{
+  "PhysicalGames": [
+    {
+      "sr_no": 1,
+      "category": "Badminton",
+      "details": {
+        "availability": "Anytime",
+        "notes": "I can basically go anytime to play badminton"
+      }
+    },
+    {
+      "sr_no": 2,
+      "category": "TableTennis",
+      "details": {
+        "equipment": "Personal TT Racket purchased",
+        "availability": "Can practise anytime",
+        "notes": "Need to search for places to play nearby"
+      }
+    }
+  ]
+}

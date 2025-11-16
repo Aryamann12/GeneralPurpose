@@ -1,0 +1,75 @@
+{
+  "kitchenEquipment": [
+    {
+      "sr_no": 1,
+      "category": "Appliance",
+      "item_name": "Air Fryer",
+      "model_details": "1.2 L",
+      "location": "Kitchen Counter",
+      "purchase_date": null,
+      "warranty_expiry": null,
+      "usage_frequency": "Weekly",
+      "notes": "Use for quick air-fried snacks."
+    },
+    {
+      "sr_no": 2,
+      "category": "Appliance",
+      "item_name": "Mixie Grinder - Juice Maker",
+      "model_details": "3 Jars, 500W",
+      "location": "Kitchen Shelf",
+      "purchase_date": null,
+      "warranty_expiry": null,
+      "usage_frequency": "Daily",
+      "notes": "For chutneys, masala grinding and juices."
+    },
+    {
+      "sr_no": 3,
+      "category": "Appliance",
+      "item_name": "Electric Kettle",
+      "model_details": "1.5 L",
+      "location": "Kitchen Counter",
+      "purchase_date": null,
+      "warranty_expiry": null,
+      "usage_frequency": "Daily",
+      "notes": "Boil water for tea/coffee/instant food."
+    },
+    {
+      "sr_no": 4,
+      "category": "Appliance",
+      "item_name": "Rice Cooker",
+      "model_details": "1.8 L",
+      "location": "Kitchen Shelf",
+      "purchase_date": null,
+      "warranty_expiry": null,
+      "usage_frequency": "Weekly",
+      "notes": "For rice, pulao and steaming vegetables."
+    }
+  ],
+  "utensils": [
+    {
+      "sr_no": 1,
+      "category": "Cookware",
+      "item_name": "Non-stick Pan",
+      "quantity": 2,
+      "location": "Utensil Rack",
+      "notes": "For omelettes and light frying."
+    },
+    {
+      "sr_no": 2,
+      "category": "Cookware",
+      "item_name": "Pressure Cooker",
+      "quantity": 1,
+      "location": "Utensil Rack",
+      "notes": "For dals, rice and curries."
+    },
+    {
+      "sr_no": 3,
+      "category": "Other Utensils",
+      "item_name": "Spatulas / Ladles Set",
+      "quantity": 5,
+      "location": "Hanging Rack",
+      "notes": "Assorted spoons, spatulas, serving ladles."
+    }
+  ]
+}
+

@@ -1,0 +1,44 @@
+{
+  "SocialMedia": [
+    {
+      "sr_no": 1,
+      "name": "X",
+      "purpose": "Explore and follow cool people"
+    },
+    {
+      "sr_no": 2,
+      "name": "YouTube",
+      "purpose": "Follow creators + maintain my own channel about daily activities"
+    },
+    {
+      "sr_no": 3,
+      "name": "Instagram",
+      "purpose": "Explore creators and stay updated socially"
+    },
+    {
+      "sr_no": 4,
+      "name": "Facebook",
+      "purpose": "Connect and follow interesting people"
+    }
+  ],
+  "DatingApps": [
+    {
+      "sr_no": 1,
+      "name": "Tinder",
+      "notes": "Not reliable for meaningful friendships; mostly casual connections.",
+      "caution": "Be careful with hookups — always prioritise safety and protection."
+    },
+    {
+      "sr_no": 2,
+      "name": "Hinge",
+      "notes": "Mixed results; depends heavily on locality and profile quality.",
+      "caution": "Stay safe when meeting new people."
+    },
+    {
+      "sr_no": 3,
+      "name": "Bumble",
+      "notes": "Friendly UI but still not ideal for deep friendships.",
+      "caution": "Always prioritise health and safety."
+    }
+  ]
+}

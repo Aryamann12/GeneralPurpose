@@ -1,0 +1,56 @@
+[
+  {
+    "sr_no": 1,
+    "category": "PersonalLaptop",
+    "device_name": "ROG M16 Gaming Laptop",
+    "description": "Super Powerful Laptop",
+    "bought_year": 2023,
+    "specs": {
+      "processor": "12th Gen Intel Core i9-12900H",
+      "ram": "16GB",
+      "graphics": "NVIDIA GeForce RTX 3060"
+    }
+  },
+  {
+    "sr_no": 2,
+    "category": "OfficeLaptop",
+    "device_name": "Dell Laptop",
+    "specs": {
+      "processor": "Intel Core Ultra 5 135U",
+      "ram": "16GB",
+      "graphics": "Intel AI Boost Graphics"
+    }
+  },
+  {
+    "sr_no": 3,
+    "category": "Apple_iPad",
+    "device_name": "Apple iPad (2020)",
+    "chipset": "A14 Bionic",
+    "bought_year": 2020,
+    "specs": {
+      "note": "Specs below seem incorrect (copied from Office Laptop); correct information may be needed.",
+      "processor": "Intel Core Ultra 5 135U",
+      "ram": "16GB",
+      "graphics": "Intel AI Boost Graphics"
+    }
+  },
+  {
+    "sr_no": 4,
+    "category": "Apple_iPhone",
+    "device_name": "Apple iPhone 15",
+    "chipset": "A16 Bionic",
+    "bought_year": 2023
+  },
+  {
+    "sr_no": 5,
+    "category": "Apple_iWatch",
+    "device_name": "Apple Watch Series 9",
+    "bought_year": 2024
+  },
+  {
+    "sr_no": 6,
+    "category": "TV",
+    "description": "Can be connected to Device 1 and Device 2 via HDMI cable",
+    "compatible_with": ["PersonalLaptop (ROG M16)", "OfficeLaptop (Dell)"]
+  }
+]

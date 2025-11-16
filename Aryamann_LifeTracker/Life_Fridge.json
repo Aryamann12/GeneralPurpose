@@ -1,0 +1,60 @@
+{
+  "fridgeItems": [
+    {
+      "sr_no": 1,
+      "item_name": "Milk",
+      "category": "Dairy",
+      "quantity": "1 L",
+      "storage_shelf": "Top Shelf",
+      "expiry_date": "2025-11-20",
+      "status": "Fresh",
+      "priority_to_consume": "High",
+      "notes": "Use for tea/coffee and breakfast."
+    },
+    {
+      "sr_no": 2,
+      "item_name": "Eggs",
+      "category": "Protein",
+      "quantity": "6 pcs",
+      "storage_shelf": "Door Rack",
+      "expiry_date": "2025-11-25",
+      "status": "Fresh",
+      "priority_to_consume": "Medium",
+      "notes": "For omelettes and snacks."
+    },
+    {
+      "sr_no": 3,
+      "item_name": "Curd",
+      "category": "Dairy",
+      "quantity": "500 g",
+      "storage_shelf": "Middle Shelf",
+      "expiry_date": "2025-11-22",
+      "status": "Fresh",
+      "priority_to_consume": "High",
+      "notes": "For lunch/dinner and smoothies."
+    },
+    {
+      "sr_no": 4,
+      "item_name": "Mixed Vegetables",
+      "category": "Vegetables",
+      "quantity": "1 box",
+      "storage_shelf": "Vegetable Drawer",
+      "expiry_date": "2025-11-24",
+      "status": "Fresh",
+      "priority_to_consume": "Medium",
+      "notes": "For sabzi, fried rice or curry."
+    },
+    {
+      "sr_no": 5,
+      "item_name": "Leftover Curry",
+      "category": "Cooked Food",
+      "quantity": "1 container",
+      "storage_shelf": "Middle Shelf",
+      "expiry_date": "2025-11-17",
+      "status": "Leftover",
+      "priority_to_consume": "High",
+      "notes": "Finish at next meal."
+    }
+  ]
+}
+

@@ -1,0 +1,128 @@
+{
+  "CodingNinjas": {
+    "CompetitiveProgramming": [
+      {
+        "sr_no": 1,
+        "module": "BackTracking",
+        "topics": [
+          {"title": "BackTracking", "status": "⭕"}
+        ]
+      },
+      {
+        "sr_no": 2,
+        "module": "BinarySearch",
+        "topics": [
+          {"title": "Binary Search", "status": "⭕"}
+        ]
+      },
+      {
+        "sr_no": 3,
+        "module": "BitManipulation",
+        "topics": [
+          {"title": "BitManipulation - 1", "status": "⭕"},
+          {"title": "BitManipulation - 2", "status": "⭕"}
+        ]
+      },
+      {
+        "sr_no": 4,
+        "module": "BitMasking",
+        "topics": [
+          {"title": "BitMasking", "status": "⭕"}
+        ]
+      },
+      {
+        "sr_no": 5,
+        "module": "Combinatorics",
+        "topics": [
+          {"title": "Combinatorics - 1", "status": "⭕"},
+          {"title": "Combinatorics - 2", "status": "⭕"}
+        ]
+      },
+      {
+        "sr_no": 6,
+        "module": "DisjointSetUnion",
+        "topics": [
+          {"title": "Disjoint Set Union", "status": "⭕"}
+        ]
+      },
+      {
+        "sr_no": 7,
+        "module": "DynamicProgramming",
+        "topics": [
+          {"title": "Dynamic Programming", "status": "⭕"}
+        ]
+      },
+      {
+        "sr_no": 8,
+        "module": "GameTheory",
+        "topics": [
+          {"title": "Game Theory", "status": "⭕"}
+        ]
+      },
+      {
+        "sr_no": 9,
+        "module": "Graphs",
+        "topics": [
+          {"title": "Graphs - 1", "status": "⭕"},
+          {"title": "Graphs - 2", "status": "⭕"},
+          {"title": "Graphs - 3", "status": "⭕"}
+        ]
+      },
+      {
+        "sr_no": 10,
+        "module": "GreedyAlgos",
+        "topics": [
+          {"title": "Greedy Algorithms", "status": "⭕"}
+        ]
+      },
+      {
+        "sr_no": 11,
+        "module": "NumberTheory",
+        "topics": [
+          {"title": "Number Theory - 1", "status": "⭕"},
+          {"title": "Number Theory - 2", "status": "⭕"},
+          {"title": "Number Theory - 3", "status": "⭕"},
+          {"title": "Number Theory - 4", "status": "⭕"}
+        ]
+      },
+      {
+        "sr_no": 12,
+        "module": "RangeQuery",
+        "topics": [
+          {"title": "Range Query - 1", "status": "⭕"},
+          {"title": "Range Query - 2", "status": "⭕"}
+        ]
+      },
+      {
+        "sr_no": 13,
+        "module": "Sorting",
+        "topics": [
+          {"title": "Sorting", "status": "⭕"}
+        ]
+      },
+      {
+        "sr_no": 14,
+        "module": "Strings",
+        "topics": [
+          {"title": "Strings - 1", "status": "⭕"},
+          {"title": "Strings - 2", "status": "⭕"}
+        ]
+      },
+      {
+        "sr_no": 15,
+        "module": "Trees",
+        "topics": [
+          {"title": "Trees - 1", "status": "⭕"},
+          {"title": "Trees - 2", "status": "⭕"}
+        ]
+      },
+      {
+        "sr_no": 16,
+        "module": "Tries",
+        "topics": [
+          {"title": "Tries", "status": "⭕"}
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "sr_no": 1,
+    "category": "O'REILLY [HardCopies]",
+    "module": "NLP with Transformers by Lewis Tunstall, Leandro Von Werra, Thomas Wolf",
+    "topics": [
+      {"title": "Chapter 1: Hello Transformers", "status": "⭕"},
+      {"title": "Chapter 2: Text Classification", "status": "⭕"},
+      {"title": "Chapter 3: Transformer Anatomy", "status": "⭕"},
+      {"title": "Chapter 4: Multilingual Named Entity Recognition", "status": "⭕"},
+      {"title": "Chapter 5: Text Generation", "status": "⭕"},
+      {"title": "Chapter 6: Summarization", "status": "⭕"},
+      {"title": "Chapter 7: Question Answering", "status": "⭕"},
+      {"title": "Chapter 8: Making Transformers Efficient in Production", "status": "⭕"},
+      {"title": "Chapter 9: Dealing with Few to No Labels", "status": "⭕"},
+      {"title": "Chapter 10: Training Transformers from Scratch", "status": "⭕"},
+      {"title": "Chapter 11: Future Directions", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 2,
+    "category": "O'REILLY [HardCopies]",
+    "module": "Designing ML Systems by Chip Huyen",
+    "topics": [
+      {"title": "Chapter 1: Overview of Machine Learning Systems", "status": "⭕"},
+      {"title": "Chapter 2: Introduction to Machine Learning Systems Design", "status": "⭕"},
+      {"title": "Chapter 3: Data Engineering Fundamentals", "status": "⭕"},
+      {"title": "Chapter 4: Training Data", "status": "⭕"},
+      {"title": "Chapter 5: Feature Engineering", "status": "⭕"},
+      {"title": "Chapter 6: Model Development and Offline Evaluation", "status": "⭕"},
+      {"title": "Chapter 7: Model Deployment and Prediction Service", "status": "⭕"},
+      {"title": "Chapter 8: Data Distribution Shifts and Monitoring", "status": "⭕"},
+      {"title": "Chapter 9: Continual Learning and Test in Production", "status": "⭕"},
+      {"title": "Chapter 10: Infrastructure and Tooling for MLOps", "status": "⭕"},
+      {"title": "Chapter 11: The Human Side of Machine Learning", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 3,
+    "category": "O'REILLY [HardCopies]",
+    "module": "Hands-On Large Language Models by Jay Alammar & Maarten Grootendorst",
+    "topics": [
+      {"title": "Chapter 1: An Introduction to Large Language Models", "status": "⭕"},
+      {"title": "Chapter 2: Tokens and Embeddings", "status": "⭕"},
+      {"title": "Chapter 3: Looking Inside Large Language Models", "status": "⭕"},
+      {"title": "Chapter 4: Text Classification", "status": "⭕"},
+      {"title": "Chapter 5: Text Clustering and Topic Modeling", "status": "⭕"},
+      {"title": "Chapter 6: Prompt Engineering", "status": "⭕"},
+      {"title": "Chapter 7: Advanced Text Generation Techniques and Tools", "status": "⭕"},
+      {"title": "Chapter 8: Semantic Search and Retrieval-Augmented Generation", "status": "⭕"},
+      {"title": "Chapter 9: Multimodal Large Language Models", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 4,
+    "category": "O'REILLY [HardCopies]",
+    "module": "Hands-On ML with Scikit-Learn, Keras, TensorFlow by Aurelion Geron (3rd Ed.)",
+    "topics": [
+      {"title": "Chapter 1: The Machine Learning Landscape", "status": "⭕"},
+      {"title": "Chapter 2: End-to-End Machine Learning Project", "status": "⭕"},
+      {"title": "Chapter 3: Classification", "status": "⭕"},
+      {"title": "Chapter 4: Training Models", "status": "⭕"},
+      {"title": "Chapter 5: Support Vector Machines", "status": "⭕"},
+      {"title": "Chapter 6: Decision Trees", "status": "⭕"},
+      {"title": "Chapter 7: Ensemble Learning and Random Forests", "status": "⭕"},
+      {"title": "Chapter 8: Dimensionality Reduction", "status": "⭕"},
+      {"title": "Chapter 9: Unsupervised Learning Techniques", "status": "⭕"},
+      {"title": "Chapter 10: Introduction to Artificial Neural Networks with Keras", "status": "⭕"},
+      {"title": "Chapter 11: Training Deep Neural Networks", "status": "⭕"},
+      {"title": "Chapter 12: Custom Models and Training with TensorFlow", "status": "⭕"},
+      {"title": "Chapter 13: Loading and Preprocessing Data with TensorFlow", "status": "⭕"},
+      {"title": "Chapter 14: Deep Computer Vision Using Convolutional Neural Networks", "status": "⭕"},
+      {"title": "Chapter 15: Processing Sequences Using RNNs and CNNs", "status": "⭕"},
+      {"title": "Chapter 16: Natural Language Processing with Transformers", "status": "⭕"},
+      {"title": "Chapter 17: Generative AI with Autoencoders, GANs, and Diffusion Models", "status": "⭕"},
+      {"title": "Chapter 18: Reinforcement Learning", "status": "⭕"},
+      {"title": "Chapter 19: Training and Deploying TensorFlow Models at Scale", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 1,
+    "category": "O'REILLY [SoftCopies]",
+    "module": "AI Engineering by Chip Huyen",
+    "topics": [
+      {"title": "Chapter 1: Introduction to Building AI Applications with Foundation Models", "status": "⭕"},
+      {"title": "Chapter 2: Understanding Foundation Models", "status": "⭕"},
+      {"title": "Chapter 3: Evaluation Methodology", "status": "⭕"},
+      {"title": "Chapter 4: Evaluate AI Systems", "status": "⭕"},
+      {"title": "Chapter 5: Prompt Engineering", "status": "⭕"},
+      {"title": "Chapter 6: RAG and Agents", "status": "⭕"},
+      {"title": "Chapter 7: Finetuning", "status": "⭕"},
+      {"title": "Chapter 8: Dataset Engineering", "status": "⭕"},
+      {"title": "Chapter 9: Inference Optimization", "status": "⭕"},
+      {"title": "Chapter 10: AI Engineering Architecture and User Feedback", "status": "⭕"}
+    ]
+  }
+]

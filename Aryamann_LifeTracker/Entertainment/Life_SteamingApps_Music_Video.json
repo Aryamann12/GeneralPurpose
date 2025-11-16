@@ -1,0 +1,26 @@
+{
+  "sr_no": 1,
+  "category": "StreamingApps",
+  "access": [
+    {
+      "sr_no": 1,
+      "name": "Netflix",
+      "type": "Movies & Series"
+    },
+    {
+      "sr_no": 2,
+      "name": "Prime Video",
+      "type": "Movies, Series & Amazon Originals"
+    },
+    {
+      "sr_no": 3,
+      "name": "YouTube Premium",
+      "type": "Ad-free videos, movies & creators content"
+    },
+    {
+      "sr_no": 4,
+      "name": "Jio Hotstar",
+      "type": "Movies, Series & Sports"
+    }
+  ]
+}

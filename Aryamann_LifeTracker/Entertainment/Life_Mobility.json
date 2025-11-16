@@ -1,0 +1,22 @@
+[
+  {
+    "sr_no": 1,
+    "category": "Scooty",
+    "device_name": "Rented Scooty",
+    "purpose": "Exploring Hyderabad freely",
+    "description": "Ignites passion for roaming and wandering around the city; extremely useful for daily life.",
+    "usage": [
+      "Visiting supermarkets",
+      "Going to parks to play guitar early morning",
+      "Reaching large libraries (including IIIT-H) for studying"
+    ]
+  },
+  {
+    "sr_no": 2,
+    "category": "GoKartRacing",
+    "details": {
+      "availability": "Can go anytime",
+      "notes": "Go-kart racing is fills me up with Thrill and I feel Very Excited and can be used for fun, adrenaline Rush and weekend enjoyment."
+    }
+  }
+]

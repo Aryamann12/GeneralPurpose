@@ -1,0 +1,61 @@
+[
+  {
+    "sr_no": 1,
+    "category": "Shorter_Books",
+    "module": "Aditya Hriday Stotram",
+    "topics": [
+      {"title": "Origin & Battlefield Context (Ramayana – Yuddha Kanda)", "status": "⭕"},
+      {"title": "Teachings of Sage Agastya to Rama", "status": "⭕"},
+      {"title": "Praises of Surya as Cosmic Energy Source", "status": "⭕"},
+      {"title": "Sun’s Role in Illumination, Time & Life", "status": "⭕"},
+      {"title": "Verses on Courage, Vitality & Fearlessness", "status": "⭕"},
+      {"title": "Mental Transformation of Rama After Recitation", "status": "⭕"},
+      {"title": "Benefits of Chanting for Strength & Clarity", "status": "⭕"}
+    ]
+  },
+
+  {
+    "sr_no": 2,
+    "category": "Shorter_Books",
+    "module": "Saraswati Chalisa",
+    "topics": [
+      {"title": "Introduction to Goddess Saraswati", "status": "⭕"},
+      {"title": "Descriptions of Her Divine Form", "status": "⭕"},
+      {"title": "Praise for Knowledge, Speech & Creativity", "status": "⭕"},
+      {"title": "Requests for Intelligence & Clarity", "status": "⭕"},
+      {"title": "Blessings for Education & Arts", "status": "⭕"},
+      {"title": "Devotee’s Devotion & Gratitude", "status": "⭕"},
+      {"title": "Benefits of Chanting for Memory & Wisdom", "status": "⭕"}
+    ]
+  },
+
+  {
+    "sr_no": 3,
+    "category": "Shorter_Books",
+    "module": "Hanuman Chalisa",
+    "topics": [
+      {"title": "Life & Birth of Lord Hanuman", "status": "⭕"},
+      {"title": "Descriptions of His Strength & Virtues", "status": "⭕"},
+      {"title": "Hanuman’s Role in the Ramayana", "status": "⭕"},
+      {"title": "Stories of His Devotion to Rama", "status": "⭕"},
+      {"title": "Protection & Removal of Obstacles", "status": "⭕"},
+      {"title": "Promises of Faith, Courage & Fearlessness", "status": "⭕"},
+      {"title": "Benefits of Reciting the Chalisa", "status": "⭕"}
+    ]
+  },
+
+  {
+    "sr_no": 4,
+    "category": "Shorter_Books",
+    "module": "Children’s Sai Baba",
+    "topics": [
+      {"title": "Introduction to Shirdi Sai Baba for Kids", "status": "⭕"},
+      {"title": "Stories on Kindness & Compassion", "status": "⭕"},
+      {"title": "Miracles Explained in Simple Language", "status": "⭕"},
+      {"title": "Teachings on Honesty, Sharing & Faith", "status": "⭕"},
+      {"title": "Helping the Poor & the Needy", "status": "⭕"},
+      {"title": "Healing & Protection Stories", "status": "⭕"},
+      {"title": "Moral Lessons for Children", "status": "⭕"}
+    ]
+  }
+]

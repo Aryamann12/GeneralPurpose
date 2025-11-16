@@ -1,0 +1,226 @@
+[
+  {
+    "sr_no": 1,
+    "module": "The Overthinking Cure by Nick Trenton",
+    "topics": [
+      {"title": "Chapter 1: What is Overthinking?", "status": "⭕"},
+      {"title": "Chapter 2: The 'Why' of Overthinking", "status": "⭕"},
+      {"title": "Chapter 3: How to Stop Analysis Paralysis", "status": "⭕"},
+      {"title": "Chapter 4: Your Brain's Input/Output System", "status": "⭕"},
+      {"title": "Chapter 5: How to Use If-Then Planning", "status": "⭕"},
+      {"title": "Chapter 6: How to Live in the Present", "status": "⭕"},
+      {"title": "Chapter 7: How to Use Your Senses", "status": "⭕"},
+      {"title": "Chapter 8: How to Reframe and Rephrase", "status": "⭕"},
+      {"title": "Chapter 9: How to Be Decisive", "status": "⭕"},
+      {"title": "Chapter 10: How to Get Out of Your Head", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 2,
+    "module": "Stop Thinking, Start Doing by Peter Hollins",
+    "topics": [
+      {"title": "Chapter 1: The Neurochemistry of Action vs. Inaction", "status": "⭕"},
+      {"title": "Chapter 2: How to Stop Analysis Paralysis", "status": "⭕"},
+      {"title": "Chapter 3: The Art of Getting Out of Your Own Way", "status": "⭕"},
+      {"title": "Chapter 4: The 5-Second Rule and Other 'Pattern Interrupts'", "status": "⭕"},
+      {"title": "Chapter 5: How to Create Momentum", "status": "⭕"},
+      {"title": "Chapter 6: Imperfect Action as the Default", "status": "⭕"},
+      {"title": "Chapter 7: Your 30-Day Action Plan", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 3,
+    "module": "Don't Worry: 48 Lessons on Achieving Calm by Shunmyo Masuno",
+    "topics": [
+      {"title": "Part 1: Stop Worrying About Things You Can’t Control (12 Lessons)", "status": "⭕"},
+      {"title": "Part 2: Let Go of Your Ego (12 Lessons)", "status": "⭕"},
+      {"title": "Part 3: Stop Comparing Yourself to Others (12 Lessons)", "status": "⭕"},
+      {"title": "Part 4: Focus on the Here and Now (12 Lessons)", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 4,
+    "module": "Eat That Frog! by Brian Tracy",
+    "topics": [
+      {"title": "Chapter 1: Set the Table", "status": "⭕"},
+      {"title": "Chapter 2: Plan Every Day in Advance", "status": "⭕"},
+      {"title": "Chapter 3: Apply the 80/20 Rule to Everything", "status": "⭕"},
+      {"title": "Chapter 4: Consider the Consequences", "status": "⭕"},
+      {"title": "Chapter 5: Practice the ABCDE Method Continuously", "status": "⭕"},
+      {"title": "Chapter 6: Focus on Key Result Areas", "status": "⭕"},
+      {"title": "Chapter 7: The Law of Forced Efficiency", "status": "⭕"},
+      {"title": "Chapter 8: Prepare Thoroughly Before You Begin", "status": "⭕"},
+      {"title": "Chapter 9: Do Your Homework", "status": "⭕"},
+      {"title": "Chapter 10: Leverage Your Special Talents", "status": "⭕"},
+      {"title": "Chapter 11: Identify Your Key Constraints", "status": "⭕"},
+      {"title": "Chapter 12: Take It One Barrel at a Time", "status": "⭕"},
+      {"title": "Chapter 13: Put the Pressure on Yourself", "status": "⭕"},
+      {"title": "Chapter 14: Maximize Your Personal Powers", "status": "⭕"},
+      {"title": "Chapter 15: Motivate Yourself into Action", "status": "⭕"},
+      {"title": "Chapter 16: Practice Creative Procrastination", "status": "⭕"},
+      {"title": "Chapter 17: Do the Most Difficult Task First", "status": "⭕"},
+      {"title": "Chapter 18: Slice and Dice the Task", "status": "⭕"},
+      {"title": "Chapter 19: Create Large Chunks of Time", "status": "⭕"},
+      {"title": "Chapter 20: Develop a Sense of Urgency", "status": "⭕"},
+      {"title": "Chapter 21: Single Handle Every Task", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 5,
+    "module": "The Mountain is You by Brianna Wiest",
+    "topics": [
+      {"title": "Chapter 1: The Mountain Is You", "status": "⭕"},
+      {"title": "Chapter 2: Self-Sabotage Is Just the Beginning", "status": "⭕"},
+      {"title": "Chapter 3: Your Triggers Are the Key", "status": "⭕"},
+      {"title": "Chapter 4: Building Emotional Intelligence", "status": "⭕"},
+      {"title": "Chapter 5: Releasing the Past", "status": "⭕"},
+      {"title": "Chapter 6: Building a New Future", "status": "⭕"},
+      {"title": "Chapter 7: From Self-Sabotage to Self-Mastery", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 6,
+    "module": "Emotional Intelligence by Daniel Goleman",
+    "topics": [
+      {"title": "Part 1: The Emotional Brain", "status": "⭕"},
+      {"title": "Part 2: The Nature of Emotional Intelligence", "status": "⭕"},
+      {"title": "Part 3: Emotional Intelligence Applied", "status": "⭕"},
+      {"title": "Part 4: Windows of Opportunity", "status": "⭕"},
+      {"title": "Part 5: Emotional Literacy", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 7,
+    "module": "You Can Win by Shiv Khera",
+    "topics": [
+      {"title": "Chapter 1: Importance of Attitude", "status": "⭕"},
+      {"title": "Chapter 2: Build a Positive Attitude", "status": "⭕"},
+      {"title": "Chapter 3: Success", "status": "⭕"},
+      {"title": "Chapter 4: Winning Strategies", "status": "⭕"},
+      {"title": "Chapter 5: Motivation", "status": "⭕"},
+      {"title": "Chapter 6: Self-Esteem", "status": "⭕"},
+      {"title": "Chapter 7: Interpersonal Skills", "status": "⭕"},
+      {"title": "Chapter 8: Subconscious Mind & Habits", "status": "⭕"},
+      {"title": "Chapter 9: Goal Setting", "status": "⭕"},
+      {"title": "Chapter 10: Values and Vision", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 8,
+    "topics": [
+      {"title": "Chapter 1: The Hardest Hand", "status": "⭕"},
+      {"title": "Chapter 2: Truth Hurts", "status": "⭕"},
+      {"title": "Chapter 3: The Unshakeable", "status": "⭕"},
+      {"title": "Chapter 4: Taking Souls", "status": "⭕"},
+      {"title": "Chapter 5: Armored Mind", "status": "⭕"},
+      {"title": "Chapter 6: The Cookie Jar", "status": "⭕"},
+      {"title": "Chapter 7: The 40% Rule", "status": "⭕"},
+      {"title": "Chapter 8: Talent Not Required", "status": "⭕"},
+      {"title": "Chapter 9: The Uncommon Amongst Uncommon", "status": "⭕"},
+      {"title": "Chapter 10: The Empowerment of Failure", "status": "⭕"},
+      {"title": "Chapter 11: What If?", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 9,
+    "module": "The Compound Effect by Darren Hardy",
+    "topics": [
+      {"title": "Chapter 1: The Compound Effect in Action", "status": "⭕"},
+      {"title": "Chapter 2: Choices", "status": "⭕"},
+      {"title": "Chapter 3: Habits", "status": "⭕"},
+      {"title": "Chapter 4: Momentum", "status": "⭕"},
+      {"title": "Chapter 5: Influences", "status": "⭕"},
+      {"title": "Chapter 6: Acceleration", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 10,
+    "module": "The Psychology of Money by Morgan Housel",
+    "topics": [
+      {"title": "Chapter 1: No One's Crazy", "status": "⭕"},
+      {"title": "Chapter 2: Luck & Risk", "status":"⭕"},
+      {"title": "Chapter 3: Never Enough", "status": "⭕"},
+      {"title": "Chapter 4: Confounding Compounding", "status": "⭕"},
+      {"title": "Chapter 5: Getting Wealthy vs. Staying Wealthy", "status": "⭕"},
+      {"title": "Chapter 6: Tails, You Win", "status": "⭕"},
+      {"title": "Chapter 7: Freedom", "status": "⭕"},
+      {"title": "Chapter 8: Man in the Car Paradox", "status": "⭕"},
+      {"title": "Chapter 9: Wealth is What You Don't See", "status": "⭕"},
+      {"title": "Chapter 10: Save Money", "status": "⭕"},
+      {"title": "Chapter 11: Reasonable > Rational", "status": "⭕"},
+      {"title": "Chapter 12: Surprise!", "status": "⭕"},
+      {"title": "Chapter 13: Room for Error", "status": "⭕"},
+      {"title": "Chapter 14: You'll Change", "status": "⭕"},
+      {"title": "Chapter 15: Nothing's Free", "status": "⭕"},
+      {"title": "Chapter 16: You & Me", "status": "⭕"},
+      {"title": "Chapter 17: The Seduction of Pessimism", "status": "⭕"},
+      {"title": "Chapter 18: When You'll Believe Anything", "status": "⭕"},
+      {"title": "Chapter 19: All Together Now", "status": "⭕"},
+      {"title": "Chapter 20: Confessions", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 11,
+    "module": "Same as Ever by Morgan Housel",
+    "topics": [
+      {"title": "Chapter 1: Hanging by a Thread", "status": "⭕"},
+      {"title": "Chapter 2: The End of History", "status": "⭕"},
+      {"title": "Chapter 3: Good Times Create Bad Times", "status": "⭕"},
+      {"title": "Chapter 4: Wild, Surprising, and Unprecedented", "status": "⭕"},
+      {"title": "Chapter 5: The Best Story Wins", "status": "⭕"},
+      {"title": "Chapter 6: The Power of 'I Don't Know'", "status": "⭕"},
+      {"title": "Chapter 7: Why You Should Love Pessimism", "status": "⭕"},
+      {"title": "Chapter 8: Risk Is What You Don't See", "status": "⭕"},
+      {"title": "Chapter 9: The Seduction of 'Just One More'", "status": "⭕"},
+      {"title": "Chapter 10: The Long Run vs. The Short Run", "status": "⭕"},
+      {"title": "Chapter 11: When the Magic Happens", "status": "⭕"},
+      {"title": "Chapter 12: The Freak Show of Averages", "status": "⭕"},
+      {"title": "Chapter 13: The Tipping Point", "status": "⭕"},
+      {"title": "Chapter 14: Incentives: The Most Powerful Force", "status": "⭕"},
+      {"title":."Chapter 15: Now You're Talking", "status": "⭕"},
+      {"title": "Chapter 16: The Art of Living", "status": "⭕"},
+      {"title": "Chapter 17: Too Much, Too Soon", "status": "⭕"},
+      {"title": "Chapter 18: The Illusion of Stability", "status": "⭕"},
+      {"title": "Chapter 19: The Hardest Problem", "status": "⭕"},
+      {"title": "Chapter 20: It's Supposed to Be Hard", "status": "⭕"},
+      {"title": "Chapter 21: The Power of the Obvious", "status": "⭕"},
+      {"title": "Chapter 22: Keeping It Simple", "status": "⭕"},
+      {"title": "Chapter 23: Same as Ever", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 12,
+    "module": "The Courage to be Disliked by Ichiro Kishimi & Fumitake Koga",
+    "topics": [
+      {"title": "The First Night: The Trauma of Our Past", "status": "⭕"},
+      {"title": "The Second Night: All Problems Are Interpersonal Relationship Problems", "status": "⭕"},
+      {"title": "The Third Night: Let Go of Other People's Tasks", "status": "⭕"},
+      {"title": "The Fourth Night: Where the Center of the World Is", "status": "⭕"},
+      {"title": "The Fifth Night: To Live in Earnest in the Here and Now", "status": "⭕"}
+    ]
+  },
+  {
+    "sr_no": 13,
+    "module": "The Laws of Human Nature by Robert Greene",
+    "topics": [
+      {"title": "Chapter 1: Master Your Emotional Self (The Law of Irrationality)", "status": "⭕"},
+      {"title": "Chapter 2: Transform Self-Love into Empathy (The Law of Narcissism)", "status": "⭕"},
+      {"title": "Chapter 3: See Through People's Masks (The Law of Role-playing)", "status": "⭕"},
+      {"title": "Chapter 4: Determine the Strength of People's Character (The Law of Compulsive Behavior)", "status": "⭕"},
+      {"title": "Chapter 5: Become an Elusive Object of Desire (The Law of Covetousness)", "status": "⭕"},
+      {"title": "Chapter 6: Elevate Your Perspective (The Law of Shortsightedness)", "status": "⭕"},
+      {"title": "Chapter 7: Soften People's Resistance by Confirming Their Self-Opinion (The Law of Defensiveness)", "status": "⭕"},
+      {"title": "Chapter 8: Change Your Circumstances by Changing Your Attitude (The Law of Self-sabotage)", "status": "⭕"},
+      {"title": "Chapter 9: Confront Your Dark Side (The Law of Repression)", "status": "⭕"},
+      {"title": "Chapter 10: Beware the Fragile Ego (The Law of Envy)", "status": "⭕"},
+      {"title": "Chapter 11: Know Your Limits (The Law of Grandiosity)", "status": "⭕"},
+      {"title": "Chapter 12: Reconnect to the Masculine or Feminine Within You (The Law of Gender Rigidity)", "status": "⭕"},
+      {"title": "Chapter 13: Advance with a Sense of Purpose (The Law of Aimlessness)", "status": "⭕"},
+      {"title": "Chapter 14: Resist the Downward Pull of the Group (The Law of Conformity)", "status": "⭕"},
+      {"title": "Chapter 15: Make Them Want to Follow You (The Law of Fickleness)", "status": "⭕"},
+      {"title": "Chapter 16: See the Hostility Behind the Friendly Façade (The Law of Aggression)", "status": "⭕"},
+      {"title": "Chapter 17: Seize the Historical Moment (The Law of Generational Myopia)", "status": "⭕"},
+      {"title": "Chapter 18: Meditate on Our Common Mortality (The Law of Death Denial)", "status": "⭕"}
+    ]
+  }
+]

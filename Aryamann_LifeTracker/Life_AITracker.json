@@ -1,0 +1,330 @@
+{
+  "aiResourceTracker": {
+    "limitedFreeTier": [
+      {
+        "id": "firecrawl",
+        "serviceName": "Firecrawl",
+        "provider": "Firecrawl",
+        "category": "Web Scraping / RAG API",
+        "planDetails": {
+          "planType": "Limited Free Tier",
+          "renewalInfo": "One-time"
+        },
+        "usageTracking": {
+          "trackingMethod": "credits",
+          "limits": [
+            {
+              "type": "totalCredits",
+              "used": 0,
+              "total": 100,
+              "unit": "credits",
+              "resets": "N/A"
+            }
+          ]
+        },
+        "notes": "100 Creds only."
+      },
+      {
+        "id": "tavily",
+        "serviceName": "Tavily",
+        "provider": "Tavily AI",
+        "category": "Web Agent API",
+        "planDetails": {
+          "planType": "Limited Free Tier",
+          "renewalInfo": "Renews Monthly"
+        },
+        "usageTracking": {
+          "trackingMethod": "api_calls",
+          "limits": [
+            {
+              "type": "monthly",
+              "used": 0,
+              "total": 1000,
+              "unit": "calls",
+              "resets": "Monthly"
+            }
+          ]
+        },
+        "notes": "Free tier for developers."
+      },
+      {
+        "id": "pinecode_ai",
+        "serviceName": "Pinecode.ai",
+        "provider": "Pinecode.ai",
+        "category": "AI Trading",
+        "planDetails": {
+          "planType": "Limited Free Tier",
+          "renewalInfo": "N/A"
+        },
+        "usageTracking": {
+          "trackingMethod": "features",
+          "limits": [
+            {
+              "type": "bots",
+              "used": 0,
+              "total": 3,
+              "unit": "bots",
+              "resets": "N/A"
+            }
+          ]
+        },
+        "notes": "Limited to a few trading bots."
+      },
+      {
+        "id": "agentforce",
+        "serviceName": "Salesforce AgentForce Builder",
+        "provider": "Salesforce",
+        "category": "AI Agent Builder",
+        "planDetails": {
+          "planType": "Limited Free Tier",
+          "renewalInfo": "N/A"
+        },
+        "usageTracking": {
+          "trackingMethod": "credits",
+          "limits": [
+            {
+              "type": "monthly",
+              "used": 0,
+              "total": 5000,
+              "unit": "credits",
+              "resets": "Monthly"
+            }
+          ]
+        },
+        "notes": "Trial or developer tier."
+      },
+      {
+        "id": "cerebras",
+        "serviceName": "Cerebras AI",
+        "provider": "Cerebras",
+        "category": "AI Infrastructure",
+        "planDetails": {
+          "planType": "Limited Free Tier",
+          "renewalInfo": "N/A"
+        },
+        "usageTracking": {
+          "trackingMethod": "compute_time",
+          "limits": [
+            {
+              "type": "total",
+              "used": 0,
+              "total": 10,
+              "unit": "hours",
+              "resets": "N/A"
+            }
+          ]
+        },
+        "notes": "Developer access to AI infrastructure."
+      },
+      {
+        "id": "cohere",
+        "serviceName": "Cohere",
+        "provider": "Cohere",
+        "category": "LLM",
+        "planDetails": {
+          "planType": "Limited Free Tier",
+          "renewalInfo": "Renews Monthly"
+        },
+        "usageTracking": {
+          "trackingMethod": "api_calls",
+          "limits": [
+            {
+              "type": "monthly",
+              "used": 0,
+              "total": 10000,
+              "unit": "calls",
+              "resets": "Monthly"
+            }
+          ]
+        },
+        "notes": "Developer tier for non-production use."
+      }
+    ],
+    "paidOrProvided": [
+      {
+        "id": "claude",
+        "serviceName": "Anthropic Claude",
+        "provider": "Anthropic",
+        "category": "LLM",
+        "planDetails": {
+          "planType": "Purchased",
+          "renewalInfo": "Renews Monthly"
+        },
+        "usageTracking": {
+          "trackingMethod": "percentage",
+          "limits": [
+            {
+              "type": "session",
+              "used": 12,
+              "total": 100,
+              "unit": "percent",
+              "resets": "in 3 hr 8 min"
+            },
+            {
+              "type": "weekly",
+              "used": 10,
+              "total": 100,
+              "unit": "percent",
+              "resets": "Thu 6:29 PM"
+            }
+          ],
+          "modelSpecificUsage": [
+            {
+              "modelName": "Opus",
+              "used": 0,
+              "total": 100,
+              "unit": "percent"
+            }
+          ]
+        },
+        "notes": "Personal subscription."
+      },
+      {
+        "id": "codex",
+        "serviceName": "OpenAI Codex",
+        "provider": "OpenAI",
+        "category": "LLM / Code",
+        "planDetails": {
+          "planType": "GEP",
+          "renewalInfo": "Provided by Company"
+        },
+        "usageTracking": {
+          "trackingMethod": "percentage",
+          "limits": [
+            {
+              "type": "hourly",
+              "used": 6,
+              "total": 100,
+              "unit": "percent",
+              "resets": "7:48 PM"
+            },
+            {
+              "type": "weekly",
+              "used": 5,
+              "total": 100,
+              "unit": "percent",
+              "resets": "Nov 20"
+            }
+          ]
+        },
+        "notes": "Company-provided (GEP). Upgraded to GPT-5.1."
+      },
+      {
+        "id": "gemini",
+        "serviceName": "Google Gemini",
+        "provider": "Google",
+        "category": "LLM",
+        "planDetails": {
+          "planType": "Student Discount",
+          "renewalInfo": "1 Year"
+        },
+        "usageTracking": {
+          "trackingMethod": "percentage",
+          "limits": [
+            {
+              "type": "monthly",
+              "used": 0,
+              "total": 100,
+              "unit": "percent",
+              "resets": "N/A"
+            }
+          ]
+        },
+        "notes": "Includes Gemini 2.5 Pro and other Google app integrations."
+      },
+      {
+        "id": "perplexity",
+        "serviceName": "Perplexity AI",
+        "provider": "Perplexity",
+        "category": "Search / Answer Engine",
+        "planDetails": {
+          "planType": "Promotional Offer",
+          "renewalInfo": "1 Year"
+        },
+        "usageTracking": {
+          "trackingMethod": "pro_searches",
+          "limits": [
+            {
+              "type": "daily",
+              "used": 0,
+              "total": 600,
+              "unit": "searches",
+              "resets": "Daily"
+            }
+          ]
+        },
+        "notes": "Airtel Sim Card Offer."
+      },
+      {
+        "id": "notebooklm",
+        "serviceName": "NotebookLM",
+        "provider": "Google",
+        "category": "Productivity / RAG",
+        "planDetails": {
+          "planType": "Included in Gemini",
+          "renewalInfo": "1 Year"
+        },
+        "usageTracking": {
+          "trackingMethod": "N/A",
+          "limits": []
+        },
+        "notes": "Part of the Google/Gemini student bundle."
+      },
+      {
+        "id": "cursor",
+        "serviceName": "Cursor",
+        "provider": "Cursor",
+        "category": "AI-Native IDE",
+        "planDetails": {
+          "planType": "GEP",
+          "renewalInfo": "Provided by Company"
+        },
+        "usageTracking": {
+          "trackingMethod": "percentage",
+          "limits": [
+            {
+              "type": "monthly",
+              "used": 0,
+              "total": 100,
+              "unit": "percent",
+              "resets": "N/A"
+            }
+          ]
+        },
+        "notes": "Company-provided (GEP)."
+      },
+      {
+        "id": "copilot",
+        "serviceName": "Microsoft CoPilot",
+        "provider": "Microsoft",
+        "category": "AI Assistant / Productivity",
+        "planDetails": {
+          "planType": "GEP",
+          "renewalInfo": "Provided by Company"
+        },
+        "usageTracking": {
+          "trackingMethod": "N/A",
+          "limits": []
+        },
+        "notes": "Company-provided (Microsoft CoPilot CHAT)."
+      }
+    ],
+    "freeToUse": [
+      {
+        "id": "deepseek",
+        "serviceName": "DeepSeek",
+        "provider": "DeepSeek AI",
+        "category": "LLM",
+        "planDetails": {
+          "planType": "Free to Use",
+          "renewalInfo": "N/A"
+        },
+        "usageTracking": {
+          "trackingMethod": "N/A",
+          "limits": []
+        },
+        "notes": "Absolutely Free to Use."
+      }
+    ]
+  }
+}

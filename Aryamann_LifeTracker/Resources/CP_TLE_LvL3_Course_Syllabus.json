@@ -1,5 +1,3 @@
-#syllabus
-```json wrap title:"syllabus_tle_LvL3.json" {5,15,24,32,41,50,59,68,77,85,93}
 {
   "TLE_LvL3": [
     {
@@ -110,4 +108,3 @@
     }
   ]
 }
-```
